@@ -20,4 +20,5 @@ return [
     'Application',
     "Album",
     "Test",
+    "Blog",
 ];
