@@ -24,7 +24,6 @@ class AlbumTable
         if ($paginated) {
             return $this->fetchPaginatedResults();
         }
-
         return $this->tableGateway->select();
     }
 
