@@ -7,6 +7,8 @@ use Blog\Model\PostRepositoryInterface;
 use InvalidArgumentException;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+// use Zend\Debug\Debug;
+
 
 class DeleteController extends AbstractActionController
 {
@@ -46,11 +48,10 @@ class DeleteController extends AbstractActionController
         }
 
         $request = $this->getRequest();
+        // Debug::dump($request);
         if (! $request->isPost()) {
             return new ViewModel(['post' => $post]);
         }
-
-        Zend\Debug\Debug::dump($request->getPost(), $label = null, $echo = true);
 
         if ($id != $request->getPost('id')
             || 'Delete' !== $request->getPost('confirm', 'no')
