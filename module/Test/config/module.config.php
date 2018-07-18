@@ -27,10 +27,10 @@ return [
                     ],
                 ],
             ],
-            'lala' => [
+            'react' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route' => '/lala',
+                    'route' => '/react',
                     // 'constraints' => [
                     //     'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                     //     'id'     => '[0-9]+',
@@ -38,7 +38,7 @@ return [
                     'verb' => 'get',
                     'defaults' => [
                         'controller' => Controller\TestController::class,
-                        'action'     => 'lala',
+                        'action'     => 'react',
                     ],
                 ],
             ],
