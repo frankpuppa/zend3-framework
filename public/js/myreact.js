@@ -6,19 +6,19 @@ const test= React.createElement(
 
 const hello = React.createElement(
 	  'h4',
-	  { id:'title', className:'header', style: {backgroundColor: 'purple', color: 'yellow'}},
+	  { id:'title', className:'header test'},
 		'hello'
 )
 
-// ReactDOM.render(
-// 	<div>
-// 	{test}
-// 	{hello}
-// 	</div>,
-// 	document.getElementById('react-container')
-// )
-
 ReactDOM.render(
-	test,
+	<div>
+	{test}
+	{hello}
+	</div>,
 	document.getElementById('react-container')
 )
+
+// ReactDOM.render(
+// 	test,
+// 	document.getElementById('react-container')
+// )
