@@ -1,9 +1,22 @@
-
 const test= React.createElement(
-	'h1',
+	'h2',
 	{id: 'test', className: 'header'},
-	'ReactPage'
+	'ReactPage Working?'
 )
+
+const hello = React.createElement(
+	  'h4',
+	  { id:'title', className:'header', style: {backgroundColor: 'purple', color: 'yellow'}},
+		'hello'
+)
+
+// ReactDOM.render(
+// 	<div>
+// 	{test}
+// 	{hello}
+// 	</div>,
+// 	document.getElementById('react-container')
+// )
 
 ReactDOM.render(
 	test,
